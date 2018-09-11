@@ -1,4 +1,4 @@
-
+<b>[English Doc/英文文档](https://github.com/GrayOxygen/json-go-struct-app/blob/master/README.md "英文文档")</b>
 # 介绍
 这个工程只是做一个GUI图形界面app，拷贝json到最左边的文本框点击一下别处就可以得到struct了 <br>
 用到的开源项目：https://github.com/asticode/go-astilectron<br>
