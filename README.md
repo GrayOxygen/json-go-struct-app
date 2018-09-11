@@ -1,6 +1,6 @@
 <b>[中文文档](https://github.com/GrayOxygen/json-go-struct-app/blob/master/README-CN.md "中文文档")</b>
 # Introduction
-this project just made a GUI app, copy json to left textarea , you will get struct info <br>
+this project just made a GUI app, copy json to left textarea then click elsewhere(just blur) you will get struct info <br>
 I used a open source project(much appreciated)：https://github.com/asticode/go-astilectron<br>
 by the way , the parse json part is my another project https://github.com/GrayOxygen/json-go-struct
 ## Why Use Me?
