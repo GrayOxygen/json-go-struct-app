@@ -1,11 +1,17 @@
- 
-
-![screenshot](screenshot.png)
 
 # Introduction
-this project just made a GUI , parse json part is in my another project https://github.com/GrayOxygen/json-go-struct 
+this project just made a GUI , copy json to left textarea , you will get struct info <br>
+by the way , the parse json part is in my another project https://github.com/GrayOxygen/json-go-struct
+## Why Use Me?
+1. not only nest struct , also multi separate struct<br>
+![screenshot](screenshot.png)
+2. same struct name rule<br>
+    from top to bottom , use father node name + current name as a new name
+![screenshot](screenshot.png)
 ## Download App
-you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases just unzip release file to get app(exe or mac app, if you use mac app , you just unzip file to anywhere,double click JsonGoStructApp,can be work,I mean there is no mac app in Applications for you,cuz I generated mac app,but not work be a app in Applications), </br> or you can also install manually follow below 5 steps to get app if you want change my code for your purpose . 
+you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases just unzip release file to get app
+(exe or mac app, if you use mac app , you just unzip file to anywhere,double click JsonGoStructApp,can be work,I mean there is no mac app in Applications for you,cuz I generated mac app,but not work be a app in Applications),
+</br> or you can also install manually follow below 5 steps to get app if you want change my code for your purpose .
 
 
 # Step 1: install the app
