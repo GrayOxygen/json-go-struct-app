@@ -2,7 +2,7 @@
 
 ![screenshot](screenshot.png)
 
-> you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases , also install manually follow below 5 steps
+> you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases , or you can also install manually follow below 5 steps to get app if you want change my code for your purpose
 
 # Step 1: install the app
 
