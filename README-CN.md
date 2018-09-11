@@ -1,19 +1,19 @@
-[中文文档](https://github.com/GrayOxygen/json-go-struct-app/blob/master/README-CN.md "中文文档")
-# Introduction
-this project just made a GUI app, copy json to left textarea , you will get struct info <br>
-by the way , the parse json part is my another project https://github.com/GrayOxygen/json-go-struct
-## Why Use Me?
-1. not only nest struct , also multi separate struct<br>
+
+# 介绍
+这个工程只是做一个GUI图形界面app，拷贝json到最左边的文本框点击一下别处就可以得到struct了 <br>
+实际的json解析转换实现是在我的另一个工程里 https://github.com/GrayOxygen/json-go-struct
+## 为什么用?
+1. 不只是嵌套struct,还有分离的多个struct<br>
 ![screenshot](screenshot.png)
-2. same struct name rule<br>
-    from top to bottom , use father node name + current name as a new name
+2. 相同的struct名字<br>
+    从树形结构自上往下, 用父节点名字+当前名字作为新的名字，另一个重复的就保持名字不变
 ![screenshot](screenshot3.png)
 ## Download App
-you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases just unzip release file to get app
+直接下载app https://github.com/GrayOxygen/json-go-struct-app/releases just unzip release file to get app
 
->exe or mac app, if you use mac app , you just unzip file to anywhere,double click JsonGoStructApp,can be work , I mean there is no mac app in Applications for you,cuz I generated mac app,but not work be a app in Applications
+>用mac的话，直接解压后双击就行，不必放在Applications下
 
-</br> Or you can also install manually follow below 5 steps to get app if you want change my code for your purpose .
+</br> 如果你要做一些定制化的东西，记得按照如下步骤进行打包生成app（下面就不翻译了，你可以看懂）
 
 
 # Step 1: install the app
