@@ -31,7 +31,7 @@ let index = {
             asticode.notifier.error("json格式不正确！");
             return
         }
-        document.getElementById("jsonData").value = JSON.stringify(JSON.parse(json), null, "\t")
+        // document.getElementById("jsonData").value = JSON.stringify(JSON.parse(json), null, "\t")
 
         if (temp){
             astilectron.sendMessage({name: "jsonToStruct", payload: temp   }, function(message) {

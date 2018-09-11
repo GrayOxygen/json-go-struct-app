@@ -130,7 +130,7 @@ func main() {
 			Homepage:       "index.html",
 			MessageHandler: handleMessages,
 			Options: &astilectron.WindowOptions{
-				//BackgroundColor: astilectron.PtrStr("#333"),
+				BackgroundColor: astilectron.PtrStr("#333"),
 				Center: astilectron.PtrBool(true),
 				//Height:          astilectron.PtrInt(1080),
 				//Width:           astilectron.PtrInt(1920),
