@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/base.css"/>
+    <link rel="stylesheet" href="static/lib/astiloader/astiloader.css">
+    <link rel="stylesheet" href="static/lib/astimodaler/astimodaler.css">
+    <link rel="stylesheet" href="static/lib/astinotifier/astinotifier.css">
+    <link rel="stylesheet" href="static/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="static/lib/astiloader/bootstrap.css">
+</head>
+<style>
+    .parse-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        height: 100%;
+        margin-top: 5%;
+    }
+
+    .item {
+        height: 100%;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    textarea {
+        height: 80%;
+    }
+
+</style>
+
+<body>
+<div class="parse-box">
+
+    <div class="form-group item " style="flex-grow: 1">
+        <label for="comment">JSON:</label>
+        <textarea class="form-control" rows="10" id="jsonData"></textarea>
+    </div>
+    <!--
+        <button type="button" class="btn btn-default" id="parseBtn">转换</button>
+    -->
+    <div class="form-group  item" style="flex-grow: 2">
+        <label for="comment">非嵌套Struct:</label>
+        <textarea class="form-control" rows="10" id="structData"></textarea>
+    </div>
+
+    <div class="form-group item" style="flex-grow: 1">
+        <label for="comment">嵌套Struct:</label>
+        <textarea class="form-control" rows="10" id="nestStructData"></textarea>
+    </div>
+
+</div>
+<!--
+<div class="left" id="dirs"></div>
+<div class="right">
+    <div class="title"><span id="path"></span></div>
+    <div class="panel"><span class="stat" id="files_count"></span> file(s)</div>
+    <div class="panel"><span class="stat" id="files_size"></span> of file(s)</div>
+    <div class="panel" id="files_panel">
+        <div class="chart_title">Files repartition</div>
+        <div id="files"></div>
+    </div>
+</div>
+
+-->
+<script src="static/js/index.js"></script>
+<script src="static/lib/astiloader/astiloader.js"></script>
+<script src="static/lib/astimodaler/astimodaler.js"></script>
+<script src="static/lib/astinotifier/astinotifier.js"></script>
+<script src="static/lib/chart/chart.min.js"></script>
+<script type="text/javascript">
+    index.init();
+</script>
+</body>
+</html>
