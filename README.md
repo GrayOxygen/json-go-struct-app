@@ -1,4 +1,4 @@
-[中文文档](https://github.com/GrayOxygen/json-go-struct-app/blob/master/README-CN.md "中文文档")
+<b>[中文文档](https://github.com/GrayOxygen/json-go-struct-app/blob/master/README-CN.md "中文文档")</b>
 # Introduction
 this project just made a GUI app, copy json to left textarea , you will get struct info <br>
 by the way , the parse json part is my another project https://github.com/GrayOxygen/json-go-struct
