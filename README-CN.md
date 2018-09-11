@@ -4,11 +4,12 @@
 用到的开源项目：https://github.com/asticode/go-astilectron<br>
 实际的json解析转换实现是在我的另一个工程里 https://github.com/GrayOxygen/json-go-struct
 ## 为什么用?
-1. 不只是嵌套struct,还有分离的多个struct<br>
+1. 不只是嵌套struct，还有分离的多个struct(写接口时你需要这个)<br>
 ![screenshot](screenshot.png)
-2. 相同的struct名字<br>
+2. 区分相同的struct名字<br>
     从树形结构自上往下, 用父节点名字+当前名字作为新的名字，另一个重复的就保持名字不变
 ![screenshot](screenshot3.png)
+总之，尽量省去你手动修改的工作
 ## Download App
 直接下载app https://github.com/GrayOxygen/json-go-struct-app/releases just unzip release file to get app
 
