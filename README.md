@@ -1,6 +1,6 @@
 
 # Introduction
-this project just made a GUI , copy json to left textarea , you will get struct info <br>
+this project just made a GUI app, copy json to left textarea , you will get struct info <br>
 by the way , the parse json part is in my another project https://github.com/GrayOxygen/json-go-struct
 ## Why Use Me?
 1. not only nest struct , also multi separate struct<br>
