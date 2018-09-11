@@ -2,7 +2,7 @@
 
 ![screenshot](screenshot.png)
 
-> you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases , or you can also install manually follow below 5 steps to get app if you want change my code for your purpose
+> you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases just unzip release file to get app(exe or mac app, if you use mac app , you just unzip file to anywhere,double click JsonGoStructApp,can be work,I mean there is no mac app in Applications for you,cuz I generated mac app,but not work be a app in Applications), or you can also install manually follow below 5 steps to get app if you want change my code for your purpose . 
 
 # Step 1: install the app
 
