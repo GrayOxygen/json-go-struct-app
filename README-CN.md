@@ -1,6 +1,7 @@
 
 # 介绍
 这个工程只是做一个GUI图形界面app，拷贝json到最左边的文本框点击一下别处就可以得到struct了 <br>
+用到的开源项目：https://github.com/asticode/go-astilectron<br>
 实际的json解析转换实现是在我的另一个工程里 https://github.com/GrayOxygen/json-go-struct
 ## 为什么用?
 1. 不只是嵌套struct,还有分离的多个struct<br>
