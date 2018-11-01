@@ -34,21 +34,18 @@ let index = {
         // document.getElementById("jsonData").value = JSON.stringify(JSON.parse(json), null, "\t")
 
         if (temp){
-            astilectron.sendMessage({name: "jsonToStruct", payload: temp   }, function(message) {
+            astilectron.sendMessage({name: "jsonToProto", payload: temp   }, function(message) {
                 // Check error
                 if (message){
                     if ( message.name === "error") {
-                        document.getElementById("structData").value = "";
-                        document.getElementById("nestStructData").value = "";
+                        document.getElementById("MsgInfo").value = "";
                         asticode.notifier.error(message.payload.error.message);
                         return
                     }
-                    document.getElementById("structData").value = message.payload.structData;
-                    document.getElementById("nestStructData").value = message.payload.nestStructData;
+                    document.getElementById("MsgInfo").value = message.payload.MsgInfo;
                     return
                 }
-                document.getElementById("structData").value = "";
-                document.getElementById("nestStructData").value = "";
+                document.getElementById("MsgInfo").value = "";
             });
         }
     },

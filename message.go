@@ -35,15 +35,14 @@ func handleMessages(_ *astilectron.Window, m bootstrap.MessageIn) (payload inter
 			payload = err.Error()
 			return
 		}
-	case "jsonToStruct": //解析操作
+	case "jsonToProto": //解析操作
 		// Unmarshal payload
 		var jsonStr string
 		if len(m.Payload) > 0 {
 			// Unmarshal payload
 			if err = json.Unmarshal(m.Payload, &jsonStr); err != nil {
-				payload = StructInfo{
-					NestStructData: "",
-					StructData:     "",
+				payload = MsgInfo{
+					Proto: "",
 					Error: &CommonError{
 						Name:    "error",
 						Message: err.Error(),
@@ -54,11 +53,10 @@ func handleMessages(_ *astilectron.Window, m bootstrap.MessageIn) (payload inter
 
 			if len(strings.TrimSpace(jsonStr)) > 0 {
 				//TODO 解析
-				nstct, stct, er := apis.JSON2Struct(jsonStr)
+				proto_str, er := apis.JSON2Proto(jsonStr)
 				if er != nil {
-					payload = StructInfo{
-						NestStructData: "",
-						StructData:     "",
+					payload = MsgInfo{
+						Proto: "",
 						Error: &CommonError{
 							Name:    "error",
 							Message: er.Error(),
@@ -67,18 +65,16 @@ func handleMessages(_ *astilectron.Window, m bootstrap.MessageIn) (payload inter
 					err = er
 				} else {
 					// Init exploration
-					payload = StructInfo{
-						NestStructData: nstct,
-						StructData:     stct,
-						Error:          nil,
+					payload = MsgInfo{
+						Proto: proto_str,
+						Error: nil,
 					}
 					return
 				}
 			} else {
-				payload = StructInfo{
-					NestStructData: "",
-					StructData:     "",
-					Error:          nil,
+				payload = MsgInfo{
+					Proto: "",
+					Error: nil,
 				}
 				return
 			}
@@ -92,10 +88,10 @@ type CommonError struct {
 	Name    string `json:"name"` //ok表示正常，error表示错误
 	Message string `json:"message"`
 }
-type StructInfo struct {
-	NestStructData string       `json:"nestStructData"`
-	StructData     string       `json:"structData"`
-	Error          *CommonError `json:"error"`
+
+type MsgInfo struct {
+	Proto string       `json:"proto"`
+	Error *CommonError `json:"error"`
 }
 
 // Exploration represents the results of an exploration
