@@ -1,8 +1,8 @@
-<b>[中文文档](https://github.com/GrayOxygen/json-go-struct-app/blob/master/README-CN.md "中文文档")</b>
+<b>[中文文档](https://github.com/GrayOxygen/json-to-grpc-app/blob/master/README-CN.md "中文文档")</b>
 # Introduction
-this project just made a GUI app, copy json to left textarea then click elsewhere(just blur) you will get struct info <br>
+this project just made a GUI app, copy json to left textarea then click elsewhere(just blur) you will get grpc message <br>
 I used a open source project(much appreciated)：https://github.com/asticode/go-astilectron<br>
-by the way , the parse json part is my another project https://github.com/GrayOxygen/json-go-struct
+by the way , the parse json part is my another project https://github.com/GrayOxygen/json-to-grpc
 ## Why Use Me?
 1. not only nest struct , also multi separate struct<br>
 ![screenshot](screenshot.png)
@@ -10,7 +10,7 @@ by the way , the parse json part is my another project https://github.com/GrayOx
     from top to bottom , use father node name + current name as a new name
 ![screenshot](screenshot3.png)
 ## Download App
-you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases just unzip release file to get app
+you can download app  https://github.com/GrayOxygen/json-to-grpc-app/releases just unzip release file to get app
 
 >exe or mac app, if you use mac app , you just unzip file to anywhere,double click JsonGoProtoApp,can be work , I mean there is no mac app in Applications for you,cuz I generated mac app,but not work be a app in Applications
 
@@ -21,8 +21,8 @@ you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases 
 
 Run the following commands:
 
-    $ go get -u github.com/GrayOxygen/json-go-struct-app/...
-    $ rm $GOPATH/src/github.com/GrayOxygen/json-go-struct-app/bind.go
+    $ go get -u github.com/GrayOxygen/json-to-grpc-app/...
+    $ rm $GOPATH/src/github.com/GrayOxygen/json-to-grpc-app/bind.go
 
 # Step 2: install the bundler
 
@@ -36,7 +36,7 @@ And don't forget to add `$GOPATH/bin` to your `$PATH`.
 
 Run the following commands:
 
-    $ cd $GOPATH/src/github.com/GrayOxygen/json-go-struct-app
+    $ cd $GOPATH/src/github.com/GrayOxygen/json-to-grpc-app
     $ astilectron-bundler -v
     
 # Step 4: use the app

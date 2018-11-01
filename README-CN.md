@@ -1,18 +1,10 @@
-<b>[English Doc/英文文档](https://github.com/GrayOxygen/json-go-struct-app/blob/master/README.md "英文文档")</b>
+<b>[English Doc/英文文档](https://github.com/GrayOxygen/json-to-grpc-app/blob/master/README.md "英文文档")</b>
 # 介绍
-这个工程只是做一个GUI图形界面app，拷贝json到最左边的文本框点击一下别处就可以得到struct了 <br>
+这个工程只是做一个GUI图形界面app，拷贝json到最左边的文本框点击一下别处就可以得到grpc message了 <br>
 用到的开源项目：https://github.com/asticode/go-astilectron<br>
 实际的json解析转换实现是在我的另一个工程里 https://github.com/GrayOxygen/json-go-struct
 ## 为什么用?
-1. 不只是嵌套struct，还有分离的多个struct(写接口时你需要这个)<br>
-![screenshot](screenshot.png)
-2. 区分相同的struct名字<br>
-    从树形结构自上往下, 用父节点名字+当前名字作为新的名字，另一个重复的就保持名字不变
-![screenshot](screenshot3.png)
-总之，尽量省去你手动修改的工作
-## Download App
-直接下载app https://github.com/GrayOxygen/json-go-struct-app/releases just unzip release file to get app
-
+ 
 >用mac的话，直接解压后双击就行，不必放在Applications下
 
 </br> 如果你要做一些定制化的东西，记得按照如下步骤进行打包生成app（下面就不翻译了，你可以看懂）
@@ -22,8 +14,8 @@
 
 Run the following commands:
 
-    $ go get -u github.com/GrayOxygen/json-go-struct-app/...
-    $ rm $GOPATH/src/github.com/GrayOxygen/json-go-struct-app/bind.go
+    $ go get -u github.com/GrayOxygen/json-to-grpc-app/...
+    $ rm $GOPATH/src/github.com/GrayOxygen/json-to-grpc-app/bind.go
 
 # Step 2: install the bundler
 
@@ -37,7 +29,7 @@ And don't forget to add `$GOPATH/bin` to your `$PATH`.
 
 Run the following commands:
 
-    $ cd $GOPATH/src/github.com/GrayOxygen/json-go-struct-app
+    $ cd $GOPATH/src/github.com/GrayOxygen/json-to-grpc-app
     $ astilectron-bundler -v
     
 # Step 4: use the app
