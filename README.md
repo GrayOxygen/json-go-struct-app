@@ -12,7 +12,7 @@ by the way , the parse json part is my another project https://github.com/GrayOx
 ## Download App
 you can download app  https://github.com/GrayOxygen/json-go-struct-app/releases just unzip release file to get app
 
->exe or mac app, if you use mac app , you just unzip file to anywhere,double click JsonGoStructApp,can be work , I mean there is no mac app in Applications for you,cuz I generated mac app,but not work be a app in Applications
+>exe or mac app, if you use mac app , you just unzip file to anywhere,double click JsonGoProtoApp,can be work , I mean there is no mac app in Applications for you,cuz I generated mac app,but not work be a app in Applications
 
 </br> Or you can also install manually follow below 5 steps to get app if you want change my code for your purpose .
 

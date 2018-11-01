@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/GrayOxygen/json-go-struct/apis"
 	"encoding/json"
+	"github.com/GrayOxygen/json-go-struct/apis"
+	"github.com/GrayOxygen/json-go-struct/util"
 	"github.com/asticode/go-astichartjs"
 	"io/ioutil"
 	"os"
@@ -38,9 +39,18 @@ func handleMessages(_ *astilectron.Window, m bootstrap.MessageIn) (payload inter
 	case "jsonToProto": //解析操作
 		// Unmarshal payload
 		var jsonStr string
+
+		util.Log.Printf("拿到是payload", m.Payload)
+
+		if len(m.Payload) < 1 {
+			payload = "空的"
+			return
+		}
+
 		if len(m.Payload) > 0 {
 			// Unmarshal payload
 			if err = json.Unmarshal(m.Payload, &jsonStr); err != nil {
+				util.Log.Printf("反序列化失败", err.Error())
 				payload = MsgInfo{
 					Proto: "",
 					Error: &CommonError{
@@ -54,6 +64,8 @@ func handleMessages(_ *astilectron.Window, m bootstrap.MessageIn) (payload inter
 			if len(strings.TrimSpace(jsonStr)) > 0 {
 				//TODO 解析
 				proto_str, er := apis.JSON2Proto(jsonStr)
+				util.Log.Printf("返回的proto：：：", proto_str)
+				util.Log.Printf("返回的proto err：：：", er)
 				if er != nil {
 					payload = MsgInfo{
 						Proto: "",
@@ -65,9 +77,9 @@ func handleMessages(_ *astilectron.Window, m bootstrap.MessageIn) (payload inter
 					err = er
 				} else {
 					// Init exploration
-					payload = MsgInfo{
+					payload=  MsgInfo{
 						Proto: proto_str,
-						Error: nil,
+						Error:nil,
 					}
 					return
 				}
@@ -81,6 +93,8 @@ func handleMessages(_ *astilectron.Window, m bootstrap.MessageIn) (payload inter
 		}
 
 	}
+
+	util.Log.Printf("返回消息payLoad：：：", payload)
 	return
 }
 
